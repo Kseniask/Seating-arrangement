@@ -24,7 +24,7 @@ class Flight implements FlightInterface   {
     function generateStatistics() : array   {
         $stats = array();
     
-        $stats["totalSeats"] = $this->_seatingPlan["rowWidth"]*$this->_seatingPlan["rowNum"];
+        $stats["totalSeats"] = ($this->_seatingPlan["rowWidth"]-1)*($this->_seatingPlan["rowNum"]-1);
         $stats["totalWindowSeats"] = $this->_seatingPlan["windowSeat"];
         $stats["totalIsleSeats"] =  $this->_seatingPlan["isleSeat"];
         $stats["totalLegRoomSeats"] = $this->_seatingPlan["legRoom"];

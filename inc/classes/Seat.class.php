@@ -71,7 +71,7 @@ class Seat implements SeatInterface {
             $this->_price += 15;
         }
         if($this->_legRoom == true){
-            $this->_legRoom +=50;
+            $this->_price +=50;
         }
         return $this->_price;
     }

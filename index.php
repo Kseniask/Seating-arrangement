@@ -16,7 +16,7 @@ include_once("inc/classes/Seat.class.php");
 include_once("inc/classes/SeatService.class.php");
 include_once("inc/classes/Page.class.php");
 //Utility Classes
-$page = new Page("Assignment 1 - Kseniia Skaletska");
+$page = new Page("");
 $page->header();
 if(isset($_GET["reset"])){//If someone hit reset//Write the blank file
 FileService::write("");

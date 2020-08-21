@@ -10,7 +10,7 @@ class SeatService implements SeatServiceInterface  {
 
     static function generateSeatingPlan(int $rowNums, int $rowWidth, int $islePos = 0)   {
 
-        for($r=0; $r<$rowNums;$r++){
+        for($r=0; $r<$rowNums+1;$r++){
            for($s=0;$s<$rowWidth;$s++){
                 
                 //Create the seat
@@ -42,7 +42,7 @@ class SeatService implements SeatServiceInterface  {
         }
     }
         //Record the seating Plan parameters
-        self::$seatPlan["rowNum"]= $rowNums;
+        self::$seatPlan["rowNum"]= $rowNums+1;
         self::$seatPlan["rowWidth"] = $rowWidth;
         self::$seatPlan["islePos"] = $islePos;
 
