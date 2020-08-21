@@ -2,6 +2,38 @@
 
 The program creates the seating arrangement and updates availability using PHP and a textfile.
 
+## **LAUNCH**
+
+<hr>
+
+Start the server on MAMP(macOS) or WAMP(windows)
+
+**MAMP:**
+
+check the folder used for the server:
+MAMP -> Preferences -> Web Server -> choose/check the document root directory.
+Place files in this folder
+
+check the used port(mine is 8888):
+MAMP -> Preferences -> Ports ->Apache Port
+
+Make sure that the server is on. Then go the the browser and enter `localhost:8888` to see the files in a folder. find `index.php` and click on it to display the program.
+
+**WAMP**
+
+Run the WAMP program.
+On the right bottom corber click on the wamp icon.
+Apache -> Alias directories -> add alias
+enter the alias name (ex. seating) and the directory of the folder with files
+
+go to the browser and enter `localhost/seating`
+
+<br>
+
+## **DEMO**
+
+<hr>
+
 The starting page clears the manifest, so the user can choose the amount of rows, seats in a row and the position of the isle.
 
 ![generate manifest](img/generate.png)
